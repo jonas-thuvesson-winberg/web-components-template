@@ -18,16 +18,6 @@ export class HelloWorld extends HTMLElement {
     return ['message'];
   }
 
-  get message() {
-    return this._message;
-  }
-
-  set message(value) {
-    this._message = value;
-    this.setAttribute('message', value);
-    this.updateMessage();
-  }
-
   updateMessage() {
     this.shadowRoot.querySelector('.message-holder').innerHTML = `Hello, ${
       this._message || 'World'

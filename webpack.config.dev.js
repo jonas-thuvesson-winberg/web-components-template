@@ -3,7 +3,6 @@ const path = require('path');
 
 const devServerConfig = {
   devServer: {
-    // publicPath: 'dist',
     contentBase: path.join(__dirname, '..', 'src'),
     compress: true,
     port: 3000,
