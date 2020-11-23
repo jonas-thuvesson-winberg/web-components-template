@@ -1,30 +1,7 @@
+import templateString from './hello-world.html';
+
 const template = document.createElement('template');
-
-template.innerHTML =
-  /*html*/
-  ` 
-  <style>
-    .container {
-      color: white;
-      background-color: rgb(111, 111, 111);
-      border-radius: 10px;
-      padding: 10px;
-      margin: 30px auto;
-      display: block;
-      width: 50%;
-      font-family: monospace;
-      text-align: center;
-    }
-
-    .message-holder {
-      font-size: 2rem;
-      text-decoration: underline;
-    }
-  </style>
-
-  <div class="container">
-    <h1 class="message-holder">Here I am!</h1>
-  </div>`;
+template.innerHTML = templateString;
 
 export class HelloWorld extends HTMLElement {
   constructor() {

@@ -1,0 +1,22 @@
+{
+  "name": "web-component-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "webpack-dev-server --config webpack.config.dev.js",
+    "build": "webpack --config webpack.config.prod.js"
+  },
+  "author": "jonas-thuvesson-winberg",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/preset-env": "^7.12.7",
+    "babel-loader": "^8.2.1",
+    "copy-webpack-plugin": "^6.3.2",
+    "raw-loader": "^4.0.2",
+    "uglifyjs-webpack-plugin": "^2.1.2",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.11.0"
+  }
+}
